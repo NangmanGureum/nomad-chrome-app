@@ -1,0 +1,60 @@
+.toDoList{
+    text-shadow: none;
+    align-items: center;
+}
+
+
+.toDoForm input[type=text] {
+    all: unset;
+    background-color: #00000080;
+    font-size: 30px;
+    padding: 10px;
+
+    width: 521px;
+}
+
+.lists {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1px;
+}
+
+.list:first-child {
+    margin-right: 1px;
+}
+
+.list {
+    background-color: #00000080;
+    width: 250px;
+    padding: 10px;
+}
+
+.listHeader {
+    text-transform: uppercase;
+}
+
+
+li img {
+    cursor: pointer;
+    filter: brightness(1000%);
+
+    width: 12px;
+    height: 12px;
+
+    margin-right: 4px;
+
+    opacity: 0.5;
+
+    user-select: none;
+
+    user-drag: none;
+    -webkit-user-drag: none;
+}
+
+li img:hover {
+    opacity: 1;
+}
+
+li img:nth-child(2) {
+    margin-left: 4px;
+}

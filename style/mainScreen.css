@@ -1,0 +1,44 @@
+.mainScreen {
+    margin-top: 240px;
+}
+
+.clock {
+    font-size: 70px;
+
+    margin: 0px 20px;
+}
+
+.greeting {
+    font-size: 30px;
+}
+
+.weatherInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.degree {
+    font-size: 30px;
+}
+
+.showToDo {
+    all: unset;
+    text-shadow: none;
+
+    user-select: none;
+    cursor: pointer;
+    margin: 20px;
+    padding: 10px;
+    background-color: #00000080;
+
+    font-size: 20px;
+}
+
+.showToDo:hover {
+    background-color: #CCCCCC80;
+}
+
+.showToDo:active {
+    background-color: #99999980;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/animation.css">
+
+    <link rel="stylesheet" href="style/bg.css">
+    <link rel="stylesheet" href="style/whatIsYourName.css">
+    <link rel="stylesheet" href="style/mainScreen.css">
+    <link rel="stylesheet" href="style/toDoList.css">
+</head>
+
+<body>
+    <img src="" class="js-bgImg bgImg">
+
+    <!-- 이름 입력란 -->
+    <section class="js-whatIsYourName whatIsYourName hide">
+        <h1>What is Your Name?</h1>
+        <form class="js-nameForm nameForm">
+            <input type="text">
+        </form>
+    </section>
+
+    <!-- 메인 화면-->
+    <section class="js-mainScreen mainScreen hide">
+        <!-- 시계, 인삿말-->
+        <h1 class="js-clock clock">
+            00:00:00
+        </h1>
+        <h3 class="js-greeting greeting">
+            Hello, Anonymous!
+        </h3>
+        <div class="js-weather">
+            <div class="js-weatherInfo weatherInfo hide">
+                <span class="js-degree degree">20℃, Sunny</span>
+                <span class="js-where">at Hangjeong, Korea</span>
+            </div>
+            <span class="js-status">Loading</span>
+        </div>
+
+        <button class="js-showToDo showToDo">
+            Show To-do List
+        </button>
+    </section>
+
+    <!-- To-do List -->
+    <section class="js-toDoList toDoList hide">
+        <div class="box">
+            <form class="js-toDoForm toDoForm">
+                <input type="text" placeholder="Enter here what should you do">
+            </form>
+
+            <div class="lists">
+                <div class="list">
+                    <h4 class="listHeader">
+                        Pending
+                    </h4>
+                    <ul class="js-pending">
+                        <!-- <li>
+                            <span>asdf</span>
+                            <img src="images/check-icon.svg">
+                            <img src="images/x-icon.svg">
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="list">
+                    <h4 class="listHeader">
+                        Finished
+                    </h4>
+                    <ul class="js-finished">
+                        <!-- <li>
+                            <span>asdf</span>
+                            <img src="images/back-icon.svg">
+                            <img src="images/x-icon.svg">
+                        </li> -->
+                    </ul>
+                </div>
+           </div>
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script src="script/_animation.js"></script>
+    <script src="script/_main.js"></script>
+
+    <script src="script/toDoList.js"></script>
+    <script src="script/weather.js"></script>
+</body>
+</html>
