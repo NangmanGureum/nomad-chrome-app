@@ -123,7 +123,9 @@ function paintBg(bgNum) {
 function background() {
     const ranNum = Math.floor(Math.random() * QUANTITY_OF_IMGS); 
     paintBg(ranNum);
-    showingDelay(bgImg,0);
+    bgImg.addEventListener('load', (event) => {
+            showingDelay(bgImg,0);
+     });
 }
 
 // Init 펑션
